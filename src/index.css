@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  
+  --red-color: #ff4e24 ;
+}
 *{
    margin: 0px;
    padding: 0px;
     box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth!important;
 }
 
 body{
@@ -20,7 +26,7 @@ body{
 
 .parallelogram{
   clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-  background: red;
+  background: var(--red-color);
   width: 40%!important;
 }
 

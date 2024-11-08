@@ -1,9 +1,11 @@
 import React from 'react'
+import { useAppStore } from '../store'
 
 const HeroComp = () => {
+   const { homeRef } = useAppStore((state) => state)
   return (
     <>
-    <div className='w-full h-screen border-2 flex justify-center items-center   ' >
+    <div ref={homeRef} id='home' className='w-full h-screen border-2 flex justify-center items-center   ' >
         <div className='w-[80%] h-full flex justify-between items-center ' >
             <div className='w-[50%] h-full flex flex-col justify-center gap-8 items-start' >
                 <div className='w-full absolute -z-10 h-[50%] edge-para bg-red-300 flex flex-col justify-center items-start gap-4' ></div>
